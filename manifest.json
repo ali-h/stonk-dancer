@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Stonk Dancer",
+  "version": "1.0",
+  "description": "Adds a dancing stonk video overlay to any webpage",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "web_accessible_resources": [{
+    "resources": ["assets/dance.webm"],
+    "matches": ["<all_urls>"]
+  }],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  }
+}

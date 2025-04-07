@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stonk Dancer</title>
+    <link rel="icon" type="image/png" href="assets/icon32.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><img src="assets/icon32.png" alt="Stonk Icon" class="title-icon"> Stonk Dancer</h1>
+        <div class="hostname-badge" id="hostnameBadge">Loading...</div>
+        <div class="controls">
+            <div class="switch-container">
+                <label class="switch">
+                    <input type="checkbox" id="enableSwitch">
+                    <span class="slider"></span>
+                </label>
+                <span class="label">Dance</span>
+            </div>
+            <div class="switch-container">
+                <label class="switch">
+                    <input type="checkbox" id="soundSwitch">
+                    <span class="slider"></span>
+                </label>
+                <span class="label">Sound</span>
+            </div>
+            <div class="size-controls">
+                <div class="size-option">
+                    <input type="radio" id="sizeSmall" name="size" value="small">
+                    <label for="sizeSmall">Small</label>
+                </div>
+                <div class="size-option">
+                    <input type="radio" id="sizeMedium" name="size" value="medium">
+                    <label for="sizeMedium">Medium</label>
+                </div>
+                <div class="size-option">
+                    <input type="radio" id="sizeLarge" name="size" value="large" checked>
+                    <label for="sizeLarge">Large</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span class="credits"><> by ali-h</span>
+        <a href="https://github.com/ali-h/stonk-dancer" target="_blank" class="github-link">
+            <img src="assets/github-icon.png" alt="GitHub" class="github-icon">
+        </a>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
